@@ -1112,49 +1112,57 @@
                                     
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>INSTITUTION NAME:</label>
-                                            <input type="text" name="InstitutionName"    maxlength="28" placeholder="Institution Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <label>INSTITUTION ID:</label>
+                                            <input type="text" name="InstitutionId"    placeholder="Institution Id" value="" class="form-control"  required >
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>INSTITUTION NAME:</label>
-                                            <input type="text" name="InstitutionName"    maxlength="28" placeholder="Institution Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <input type="text" name="InstitutionName"  placeholder="Institution Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>INSTITUTION NAME:</label>
-                                            <input type="text" name="InstitutionName"    maxlength="28" placeholder="Institution Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <label>INSTITUTION TYPE:</label>
+                                            <!-- <input type="text" name="InstitutionType"   placeholder="Institution Type" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required > -->
+                                            <select name="InstitutionType" placeholder="Institution Type" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Institution Type</option>
+                                                <option value="Kg">Kg</option>
+                                                <option value="Primary">Primary</option>
+                                                <option value="Preparatory">Preparatory</option>
+                                                <option value="Secondary">Secondary</option>
+                                            </select>
                                         </div>
                                     </div>
+                                    
                                 </div>
 
 
                                 <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT REGION:</label>
-                                            <select name="StudentRegion" id="subject" placeholder="Student Region" value="" class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Region</option>
+                                            <label>INSTITUTION REGION:</label>
+                                            <select name="InstitutionRegion" id="subject" placeholder="Institution Region" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Institution Region</option>
                                             </select>
                                            
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT CITY:</label>
-                                            <select name="StudentCity" id="topic" placeholder="Student Region" value="" class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student City</option>
+                                            <label>INSTITUTION CITY:</label>
+                                            <select name="InstitutionCity" id="topic" placeholder="Institution Region" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Institution City</option>
                                             </select>
                                             
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT DISTRICT:</label>
-                                            <select name="StudentDistrict" id="chapter" placeholder="Student chapter" value="" class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student District</option>
+                                            <label>INSTITUTION DISTRICT:</label>
+                                            <select name="InstitutionDistrict" id="chapter" placeholder="Institution chapter" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Institution District</option>
                                             </select>
                                             
                                         </div>
