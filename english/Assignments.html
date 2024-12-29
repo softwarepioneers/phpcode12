@@ -1132,26 +1132,34 @@
 
 
                                 <div class="row">
-                                    
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>INSTITUTION NAME:</label>
-                                            <input type="text" name="InstitutionName"    maxlength="28" placeholder="Institution Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <label>STUDENT REGION:</label>
+                                            <select name="StudentRegion" id="subject" placeholder="Student Region" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Region</option>
+                                            </select>
+                                           
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>INSTITUTION NAME:</label>
-                                            <input type="text" name="InstitutionName"    maxlength="28" placeholder="Institution Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <label>STUDENT CITY:</label>
+                                            <select name="StudentCity" id="topic" placeholder="Student Region" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student City</option>
+                                            </select>
+                                            
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>INSTITUTION NAME:</label>
-                                            <input type="text" name="InstitutionName"    maxlength="28" placeholder="Institution Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <label>STUDENT DISTRICT:</label>
+                                            <select name="StudentDistrict" id="chapter" placeholder="Student chapter" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student District</option>
+                                            </select>
+                                            
                                         </div>
                                     </div>
-                                </div>
+                                   
  
                                    
                               
@@ -1776,7 +1784,7 @@
 </body>
 </html>
 
-<!-- Javascript 
+<!-- Javascript -->
 <script src="assets/bundles/libscripts.bundle.js"></script>    
 <script src="assets/bundles/vendorscripts.bundle.js"></script>
 
@@ -1792,9 +1800,9 @@
 
 
 <script src="../assets/vendor/sweetalert/sweetalert.min.js"></script> <!-- SweetAlert Plugin Js --> 
-<script src="assets/js/pages/ui/dialogs.js"></script><!-- SweetAlert Plugin Js 
+<script src="assets/js/pages/ui/dialogs.js"></script><!-- SweetAlert Plugin Js -->
 
-<!-- <script>
+<script>
     $(function() {
         // validation needs name of the element
         $('#food').multiselect();
@@ -1859,7 +1867,7 @@
 
 <script>
     $(".anyname").chosen();
-</script>  -->
+</script> 
 
 
 </body>
